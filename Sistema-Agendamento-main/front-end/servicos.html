@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços e Agendamento - Salão de Beleza</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_servicos.css">
+</head>
+
+<body>
+    <header class="bg-purple text-white text-center py-3">
+        <h1>Bem-vindo ao Sistema de Beleza</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Agendamento e Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="servicos-agenda" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Selecione o Tipo de Serviço</h2>
+            <p class="text-center mb-5">Confira os serviços que oferecemos e agende já o seu horário para cuidar de você
+                com todo o carinho que merece.</p>
+
+            <div id="servicosContainer"></div>
+
+            <h3 class="mt-5">Agendamento Online</h3>
+            <p>Facilitamos sua vida com nosso sistema de agendamento online. Escolha o melhor horário para você com
+                apenas alguns cliques.</p>
+
+            <form id="dadosClienteForm" class="form-agendamento mt-4">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Seu Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+
+                <input type="hidden" id="servico" name="servico">
+
+                <div class="mb-3">
+                    <label for="data" class="form-label">Data:</label>
+                    <input type="date" class="form-control" id="data" name="data" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="hora" class="form-label">Horário:</label>
+                    <input type="time" class="form-control" id="hora" name="hora" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Selecionar Salão</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Salão de Beleza - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/scriptExibirservi.js"></script>
+</body>
+
+</html>

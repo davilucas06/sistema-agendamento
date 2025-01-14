@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Salão de Beleza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servicos.html">Agendamento e Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contato">
+        <h2>Entre em contato conosco</h2>
+        <p>Se você tiver alguma dúvida ou gostaria de agendar um horário, entre em contato com a gente.</p>
+        <ul>
+            <li>Telefone: (11) 1234-5678</li>
+            <li>Email: contato@salãodebeleza.com</li>
+            <li>Endereço: Rua Exemplo, 123 - Cidade</li>
+        </ul>
+
+        <form onsubmit="enviarMensagem(event)">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </section>
+
+    <script>
+        function enviarMensagem(event) {
+            event.preventDefault();
+            alert("Sua mensagem foi enviada com sucesso!");
+        }
+    </script>
+
+    <footer>
+        <p>© 2024 Salão de Beleza - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>

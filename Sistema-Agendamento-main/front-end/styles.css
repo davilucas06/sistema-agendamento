@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #4E2A84; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+nav ul.nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul.nav li.nav-item {
+    margin: 0 15px;
+}
+
+nav ul.nav li.nav-item a.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul.nav li.nav-item a.nav-link:hover {
+    color: #f0a500;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0a500; 
+}
+
+/* Página Agendar */
+#agendamento {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#agendamento h2 {
+    font-size: 2em;
+    color: #4E2A84;
+}
+
+/* Página de Serviços */
+#servicosContainer {
+    
+    text-align: center;
+}
+
+#servicosContainer h3 {
+    font-size: 2em;
+    color: #4E2A84;
+    margin-bottom: 3px;
+}
+
+#servicosContainer .servico {
+    list-style: none;
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servicosContainer .servico:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#servicosContainer button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #6f3583;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#servicosContainer button:hover {
+    background-color: #81459b;
+}
+
+/* Seção de Contato */
+#contato {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fff;
+    border-top: 2px solid #4E2A84;
+    margin-top: 30px;
+}
+
+#contato h2 {
+    font-size: 2.5em;
+    color: #4E2A84;
+    margin-bottom: 30px;
+}
+
+#contato ul {
+    list-style: none;
+    margin: 20px auto;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contato label {
+    margin-bottom: 10px;
+}
+
+#contato input, #contato textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contato button {
+    padding: 10px 15px;
+    background-color: #4E2A84;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contato button:hover {
+    background-color: #f0a500;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #4E2A84;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Seção de Sobre o Projeto */
+.sobre-projeto {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.sobre-projeto h2 {
+    text-align: center;
+    color: #4E2A84;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.sobre-projeto h3 {
+    color: #4E2A84;
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+.sobre-projeto p {
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.sobre-projeto .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sobre-projeto a.btn-teste {
+    display: inline-block;
+    background-color: #4E2A84;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.sobre-projeto a.btn-teste:hover {
+    background-color: #6f3583;
+}
+
+.bg-purple {
+    background-color: #4E2A84;
+}
+
+.carousel-inner img {
+    max-height: 580px; 
+    width: 100%; 
+    object-fit: cover;
+    object-position: center; 
+}
+
+h5{
+    color: #fff;
+}
+

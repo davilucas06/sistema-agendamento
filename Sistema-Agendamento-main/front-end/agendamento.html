@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Agendamento</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #81459b;
+    }
+
+    .btn-light-grey {
+      background-color: #a8a8a8;
+      color: #000;
+    }
+
+    .btn-light-grey:hover {
+      background-color: #d6d6d6;
+      color: #000;
+    }
+
+    .btn-light-yellow {
+      background-color: #f7f0a4;
+      color: #000;
+    }
+
+    .btn-light-yellow:hover {
+      background-color: #edf3ac;
+      color: #000;
+    }
+
+    .btn-light-danger {
+      background-color: #f6446e;
+      color: #000;
+    }
+
+    .btn-light-danger:hover {
+      background-color: #e988a1;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h1 class="display-4 text-black">Detalhes do Agendamento</h1>
+    </div>
+
+    <div id="agendamentoDetalhes" class="card shadow-sm">
+      <div class="card-body">
+        <p class="fs-5">Nome do Cliente: <span id="nomeCliente" class="fw-bold text-dark"></span></p>
+        <p class="fs-5">Data: <span id="dataAgen" class="fw-bold text-dark"></span></p>
+        <p class="fs-5">Hora: <span id="horaAgen" class="fw-bold text-dark"></span></p>
+      </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <a href="index.html" class="btn btn-light-grey btn-lg">Voltar</a>
+      <button id="atualizarAgendamento" class="btn btn-light-yellow btn-lg">Atualizar Dados</button>
+      <button id="deletarAgendamento" class="btn btn-light-danger btn-lg">Deletar Agendamento</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../JS/scriptAgendamento.js"></script>
+
+</body>
+
+</html>
