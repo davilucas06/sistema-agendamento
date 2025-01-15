@@ -155,6 +155,7 @@ async function atualizarAgendamento(event) {
 
     if (response.ok) {
       alert("Agendamento atualizado com sucesso!");
+      window.location.href = "index.html";
     } else {
       alert(`Erro: ${result.message}`);
       console.error(result);
